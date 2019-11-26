@@ -20,22 +20,23 @@
 
     </div>
     <?php
-    if($_GET['success'] == 'delete'){?>
+    if(@$_GET['success'] == 'delete'){?>
     <div class="alert alert-success alert-dismissible">
         <button type="button" class="close" data-dismiss="alert">&times;</button>
         <strong>Success!</strong> The Student Is Deleted successfully.
     </div>
-    <?php }else if($_GET['success'] == 'add'){?>
+    <?php }else if(@$_GET['success'] == 'add'){?>
         <div class="alert alert-success alert-dismissible">
         <button type="button" class="close" data-dismiss="alert">&times;</button>
         <strong>Success!</strong> The Student Is Added successfully.
     </div>
-    <?php }else if($_GET['success'] == 'update') {?>
+    <?php }else if(@$_GET['success'] == 'update') {?>
         <div class="alert alert-success alert-dismissible">
         <button type="button" class="close" data-dismiss="alert">&times;</button>
         <strong>Success!</strong> The Student Is Updated successfully.
         </div>
     <?php } ?>
+
 <table class="table mt-4">
     <thead class="thead-dark text-center">
         <tr>
